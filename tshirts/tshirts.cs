@@ -5,10 +5,8 @@ namespace TshirtSpace
 {
     class Tshirt 
     {
-        static string Size(int? cms) 
-        {
-            if(cms!=null)
-            {
+        static string Size(int cms) 
+        {           
                 if(cms>0)
                 {
                     if(cms < 38) 
@@ -27,20 +25,14 @@ namespace TshirtSpace
                 else
                 {
                     return "Invalid Choice";
-                }
-            }
-            else
-            {
-                 return null;
-            }
+                }            
         }
         static void Main(string[] args) 
         {
             Debug.Assert(Size(38) == "S");
             Debug.Assert(Size(42) == "M");            
             Debug.Assert(Size(43) == "L");
-            Debug.Assert(Size(0)=="Invalid Choice");
-            Debug.Assert(Size(null) == null);
+            Debug.Assert(Size(0)=="Invalid Choice");      
             Console.WriteLine( "All is well (maybe!)");
         }
     }
