@@ -37,9 +37,9 @@ namespace AlerterSpace
         static void Main(string[] args) 
         {
             alertInCelcius(400.5f);
-            Debug.Assert(Alerter.alertFailureCount==1);
+            Debug.Assert(alertFailureCount == 1);
             alertInCelcius(303.6f);
-            Debug.Assert(Alerter.alertFailureCount==0);
+            Debug.Assert(alertFailureCount == 0);
             Console.WriteLine("{0} alerts failed.", alertFailureCount);
             Console.WriteLine("All is well (maybe!)\n");
         }
