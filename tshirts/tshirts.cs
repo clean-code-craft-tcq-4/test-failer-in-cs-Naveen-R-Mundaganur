@@ -26,7 +26,7 @@ namespace TshirtSpace
                 }
                 else
                 {
-                    return "Invalid Choice"
+                    return "Invalid Choice";
                 }
             }
             else
